@@ -1,0 +1,38 @@
+Standard Rails scaffolding with JQuery Wheel color picker plugin. It adds color picker functionality to HTML form inputs in the round color wheel fashion. The Wheel Color Picker dialog appears as user focuses the input.
+
+It currently supports these HTML elements:
+
+    * input (works on buttons too!)
+    * textarea
+
+There are numbers of formats which the color picker can display its value:
+
+   1. hex format, e.g. ffffff
+   2. CSS-style hex format, e.g. #ffffff
+   3. rgb format, e.g. rgb(255, 255, 255)
+   4. rgba format, e.g. rgba(255, 255, 255, 1)
+
+Options supported :-
+
+Name - Type/Values - Description
+dir - String - 	Directory path containing necessary plugin images.
+format - 	'hex' | 'css' | 'rgb' | 'rgba' - 	Format of the chosen color value.
+preview - 	Boolean - 	Enable live color preview on the input's background.
+userinput - Boolean -	Enable picking color by manual input.
+validate -	Boolean -	When userinput is enabled, always convert the input value to a specified format.
+
+http://plugins.jquery.com/project/wheelcolorpicker
+http://www.jar2.net/projects/jquery-wheelcolorpicker/demo
+
+
+Installing scaffoldhub gem:
+gem install scaffoldhub
+
+if you are using bundler:
+gem 'scaffoldhub'
+and then
+bundle install
+
+Use wheel color picker scaffold:
+scaffoldhub wheel_color_picker:color user name:string color:string
+
