@@ -13,7 +13,7 @@ Scaffoldhub::Specification.new do
     description 'JQuery Wheel Color plugin added in scaffold. It adds color picker functionality to HTML form inputs in the round color wheel fashion. The Wheel Color Picker dialog appears as user focuses the input.'
 
     # 4x3 aspect ratio screen shot
-    screenshot 'wheel_color_picker_screenshot.PNG'
+    screenshot 'wheel_color_picker_screenshot.png'
 
     # Tag(s) to help scaffoldhub.org users find your scaffold
     tag 'jquery'
@@ -54,9 +54,9 @@ Scaffoldhub::Specification.new do
   end
 
   with_options :src => 'templates/jquery', :dest => 'public/images' do
-    file 'arrow.PNG'
-    file 'cross.PNG'
-    file 'wheel.PNG'
+    file 'arrow.png'
+    file 'cross.png'
+    file 'wheel.png'
   end
  
  post_install_message <<MESSAGE
